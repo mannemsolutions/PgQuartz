@@ -18,8 +18,8 @@ before:
 builds:
   - id: pgquartz
     goos:
+      #- windows
       - linux
-      - windows
       - darwin
     goarch:
       - amd64
