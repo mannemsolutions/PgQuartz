@@ -1,4 +1,4 @@
-FROM golang:alpine AS quartzbuilder
+FROM --platform=${BUILDPLATFORM} golang:alpine AS quartzbuilder
 WORKDIR /usr/src/app
 
 COPY . .
